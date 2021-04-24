@@ -1,0 +1,27 @@
+.header-wrapper{
+    background-color: rgb(17,20,22);
+
+    .header-container{
+        display: flex;
+    }
+
+    .nav-links{
+        display: flex;
+
+        li{
+            list-style-type: none;
+
+            a{
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
+
+    
+
+
+}
+
+
+
