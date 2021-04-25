@@ -45,6 +45,7 @@ body {
   width: 25px;
   height: 2px;
   background-color: #fff;
+  cursor: pointer;
 }
 
 .menu-wrapper .menu-container .menu-btn_burger::before,
@@ -168,6 +169,40 @@ body {
 .hero .fas {
   color: #fff;
   margin-top: 25px;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+  -webkit-animation-name: chevronBtn;
+          animation-name: chevronBtn;
+  -webkit-animation-duration: 250ms;
+          animation-duration: 250ms;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes chevronBtn {
+  from {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+    opacity: 100%;
+  }
+}
+
+@keyframes chevronBtn {
+  from {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+    opacity: 100%;
+  }
 }
 
 .programs-wrapper {
@@ -237,6 +272,12 @@ body {
   text-transform: uppercase;
   font-weight: 600;
   width: calc(100% - 100px);
+  cursor: pointer;
+}
+
+.archive-wrapper .archive-btn a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .archive-wrapper .img-gallery {
@@ -264,6 +305,8 @@ body {
   font-size: .9rem;
   font-weight: 400;
   margin: 15px 0;
+  color: #c5c2c2;
+  letter-spacing: .3rem;
 }
 
 .mission-wrapper .content .content-headline {
@@ -294,5 +337,10 @@ body {
 .footer .footerlinks-container li a {
   text-decoration: none;
   color: #fff;
+  cursor: pointer;
+}
+
+.footer .footerlinks-container li a i {
+  margin-left: 5px;
 }
 /*# sourceMappingURL=style.css.map */

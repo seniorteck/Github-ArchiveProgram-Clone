@@ -40,6 +40,7 @@ body{
             width: 25px;
             height: 2px;
             background-color: #fff;
+            cursor:pointer;
         }
 
         .menu-btn_burger::before,
@@ -156,6 +157,21 @@ body{
     .fas{
         color: #fff;
         margin-top: 25px;
+        transition: 250ms;
+        animation-name: chevronBtn;
+        animation-duration: 250ms;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes chevronBtn {
+        from{
+            transform: translateY(-10px);
+            opacity: 0;
+        }
+        to{
+            transform: translateY(15px);
+            opacity: 100%;
+        }
     }
 }
 
@@ -217,6 +233,8 @@ body{
     .archive-content{
         font-size: .1.3rem;
         line-height: 1.6rem;
+
+       
     }
 
     .archive-btn{
@@ -231,6 +249,12 @@ body{
         text-transform: uppercase;
         font-weight: 600;
         width: calc(100% - 100px);
+        cursor: pointer;
+
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
     }
 
     .img-gallery{
@@ -252,6 +276,8 @@ body{
         font-size: .9rem;
         font-weight: 400;
         margin: 15px 0;
+        color: #c5c2c2;
+        letter-spacing: .3rem;
     }
 
     .content{
@@ -288,6 +314,10 @@ body{
         li a{
             text-decoration: none;
             color: #fff;
+            cursor: pointer;
+        }
+        li a i{
+            margin-left: 5px;
         }
     }
 }
