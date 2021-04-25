@@ -4,17 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css reset -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- font awesome icon -->
+    <link rel="stylesheet" href="css/all.css" type="text/css">
+    <!-- external css -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    
     <title>Document</title>
 </head>
 <body>
     <div class="main-wrapper">
-        <div class="header-wrapper">
-            <div class="header-container">
+        <div class="menu-wrapper">
+            <div class="menu-container">
                 <div class="logo">
                     <img src="images/GitHub-Archive-Program-logo.svg" alt="GitHub_logo"  class="logo-image">
                 </div>
-                <div>
+                <div class="menu-btn">
+                    <div class="menu-btn_burger"></div>
+                </div>
+                <div style="display: none">
                     <ul class="nav-links">
                         <li><a href="">Our Approach</a></li>
                         <li><a href="">Greatest Hits</a>
@@ -23,26 +32,45 @@
                         <li><a href="">Press</a></li>
                     </ul>
                 </div>
+                <div class="menu-mobile_container">
+                    <div class="menu-logo_wrapper">
+                        <img src="images/GitHub-Archive-Program-logo.svg" alt="GitHub_logo"  id="menu-mobile-logo">
+                    </div>
+                    <hr>
+                    <div class="menu-mobile_wrapper">
+                        <ul class="menu-mobile_links">
+                            <li><a href="">Our Approach</a></li>
+                            <li><a href="">Greatest Hits</a>
+                            <li><a href="">Arctiv Vault</a></li>
+                            <li><a href="">Partners</a></li>
+                            <li><a href="">Press</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="hero">
-            <h1>Preserving open source software for future generations</h1>
-            <p>The world is powered by open source software. It is a hidden cornerstone of modern civilization, and the shared heritage of all humanity.</p>
+            <h1 class="hero-heading">Preserving open source software for future generations</h1>
+            <p class="hero-decription">The world is powered by open source software. It is a hidden cornerstone of modern civilization, and the shared heritage of all humanity.</p>
             <h3><a href="">DISCOVER MORE</a></h3>
+            <i class="fas fa-chevron-down"></i>
         </div>
 
         <div class="programs-wrapper">
-            <h2>Archive Program Initiatives</h2>
+            <h2 class="programs-heading">Archive Program Initiatives</h2>
+            <hr>
             <div class="programs-card">
                 <div class="card">
                     <h3>Our Approach</h3>
                     <p>As today’s vital code becomes yesterday’s historical curiosity, it may be abandoned, forgotten, or lost. Worse, albeit much less likely, in the case of global catastrophe, we could lose everything stored on modern media in a few generations. Archiving software across multiple organizations and forms of storage helps to ensure its long-term preservation.</p>
                 </div>
+                <hr>
                 <div class="card">
                     <h3>The Arctic Code Vault</h3>
                     <p>On 02/02/2020 GitHub captured a snapshot of every active public repository. Those millions of repos were then archived to hardened film designed to last for 1,000 years, and stored in the GitHub Arctic Code Vault in a decommissioned coal mine deep beneath an Arctic mountain in Svalbard, Norway.</p>
                 </div>
+                <hr>
                 <div class="card">
                     <h3>Partners and Advisors</h3>
                     <p>Our partners include the Long Now Foundation, Software Heritage, the Internet Archive, Microsoft Research’s Project Silica, the Arctic World Archive, GHTorrent, and GHArchive. Our advisors include both technological visionaries and world-renowned experts in the humanities.</p>
@@ -51,10 +79,10 @@
         </div>
 
         <div class="archive-wrapper">
-            <h2>Latest Archive</h2>
-            <div class="content">
+            <h2 class="archive-heading">Latest Archive</h2>
+            <div class="archive-content">
                 <p>We are collaborating with the Bodleian Library in Oxford, the Bibliotheca Alexandrina in Egypt, and Stanford Libraries in California to store copies of 17,000 of GitHub’s most popular and most-depended-upon projects—open source’s “greatest hits”—in their archives, in museum-quality cases, to preserve them for future generations.</p>
-                <button>Learn more</button>
+                <button class="archive-btn">Learn more</button>
             </div>
             <div class="img-gallery">
                 <img src="images/box1-home.png" alt="box1-home">
@@ -64,15 +92,15 @@
         </div>
 
         <div class="mission-wrapper">
-            <h3>OUR MISSION</h3>
+            <h3 class="mission-headline">OUR MISSION</h3>
             <div class="content">
-                <h1>Preserve open source software for future generations.</h1>
-                <p>The GitHub Archive Program is a testament to the importance of the open source community. It is our hope that it will, both now and in the future, further publicize the worldwide open source movement; contribute to greater adoption of open source and open data policies worldwide; and encourage long-term thinking.</p>
+                <h1 class="content-headline">Preserve open source software for future generations.</h1>
+                <p class="content-description">The GitHub Archive Program is a testament to the importance of the open source community. It is our hope that it will, both now and in the future, further publicize the worldwide open source movement; contribute to greater adoption of open source and open data policies worldwide; and encourage long-term thinking.</p>
             </div>
         </div>
 
         <div class="footer">
-            <ul>
+            <ul class="footerlinks-container">
                 <li><a href="">FAQ</a></li>
                 <li><a href="">Explore</a></li>
                 <li><a href="">Join GitHub</a></li>
