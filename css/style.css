@@ -261,7 +261,7 @@ body {
 }
 
 .archive-wrapper .archive-btn {
-  padding: 15px 25px;
+  padding: 20px 25px;
   background: transparent;
   margin: 15px 0;
   color: #fff;
@@ -272,6 +272,7 @@ body {
   text-transform: uppercase;
   font-weight: 600;
   width: calc(100% - 100px);
+  max-width: 300px;
   cursor: pointer;
 }
 
@@ -346,15 +347,21 @@ body {
 
 @media screen and (min-width: 768px) {
   .img-gallery {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 10px;
   }
   .img-gallery img {
-    width: 100%;
-    margin: 12px 15px;
-    height: 10px;
+    width: 226px !important;
+    margin: 15px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

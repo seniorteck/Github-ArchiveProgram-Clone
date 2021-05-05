@@ -238,7 +238,7 @@ body{
     }
 
     .archive-btn{
-        padding: 15px 25px;
+        padding: 20px 25px;
         background: transparent;
         margin: 15px 0;
         color: #fff;
@@ -249,6 +249,7 @@ body{
         text-transform: uppercase;
         font-weight: 600;
         width: calc(100% - 100px);
+        max-width: 300px;
         cursor: pointer;
 
         a{
@@ -322,16 +323,21 @@ body{
     }
 }
 
-@media screen and (min-width: 768px) {
+$breakpoint-tablet: 768px;
+@media screen and (min-width: $breakpoint-tablet) {
 
     .img-gallery{
-        flex-direction: row;
+        flex-direction: row!important;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        
         img{
-            width: 100%;
-            margin: 12px 15px;
-            height: 10px;
+            width: 226px!important;
+            margin: 15px!important;
         }
     }
+   
 
 }
 
