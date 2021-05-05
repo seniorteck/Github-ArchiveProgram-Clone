@@ -343,4 +343,18 @@ body {
 .footer .footerlinks-container li a i {
   margin-left: 5px;
 }
+
+@media screen and (min-width: 768px) {
+  .img-gallery {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .img-gallery img {
+    width: 100%;
+    margin: 12px 15px;
+    height: 10px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
