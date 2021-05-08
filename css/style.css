@@ -16,6 +16,7 @@ body {
   background-color: #111416;
   position: relative;
   width: 100%;
+  z-index: 1;
 }
 
 .menu-wrapper .menu-container {
@@ -42,33 +43,50 @@ body {
 }
 
 .menu-wrapper .menu-container .menu-btn_burger {
-  width: 25px;
+  width: 20px;
   height: 2px;
   background-color: #fff;
   cursor: pointer;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .menu-wrapper .menu-container .menu-btn_burger::before,
 .menu-wrapper .menu-container .menu-btn_burger::after {
   content: '';
   position: absolute;
-  width: 25px;
+  width: 20px;
   height: 2px;
   background-color: #fff;
 }
 
 .menu-wrapper .menu-container .menu-btn_burger::before {
-  -webkit-transform: translateX(30px);
-          transform: translateX(30px);
-  -webkit-transform: translateY(-8px);
-          transform: translateY(-8px);
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
 }
 
 .menu-wrapper .menu-container .menu-btn_burger::after {
-  -webkit-transform: translateX(30px);
-          transform: translateX(30px);
-  -webkit-transform: translateY(8px);
-          transform: translateY(8px);
+  -webkit-transform: translateY(6px);
+          transform: translateY(6px);
+}
+
+.menu-wrapper .menu-container .menu-btn.open .menu-btn_burger {
+  background-color: transparent;
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px);
+  z-index: 3;
+}
+
+.menu-wrapper .menu-container .menu-btn.open .menu-btn_burger::before {
+  -webkit-transform: rotate(45deg) translate(15px, -15px);
+          transform: rotate(45deg) translate(15px, -15px);
+  z-index: 3;
+}
+
+.menu-wrapper .menu-container .menu-btn.open .menu-btn_burger::after {
+  -webkit-transform: rotate(-45deg) translate(15px, 15px);
+          transform: rotate(-45deg) translate(15px, 15px);
+  z-index: 3;
 }
 
 .menu-wrapper .nav-links {
@@ -101,6 +119,7 @@ body {
   overflow-y: auto;
   display: block;
   visibility: hidden;
+  z-index: -1;
 }
 
 .menu-mobile_container .menu-logo_wrapper {
@@ -159,11 +178,17 @@ body {
   margin: 15px 0;
 }
 
+.hero h3 {
+  margin-top: 60px;
+}
+
 .hero h3 a {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
   margin: 10px 0;
+  font-size: .9rem;
+  letter-spacing: .3rem;
 }
 
 .hero .fas {
