@@ -219,9 +219,10 @@ body{
     }
 
     .programs-card{
-
+        display: flex;
+        flex-direction: column;
         .card{
-
+            
             h3{
                 font-size: 1.8rem;
                 font-weight: lighter;
@@ -330,10 +331,13 @@ body{
     background-color: #111416;
     padding: 40px 20px;
 
-    .footerlinks-container{
 
+    .footerlinks-container{
+        display: flex;
+        flex-direction: column;
         li{
             margin: 10px 0;
+            list-style-type: none;
         }
 
         li a{
@@ -347,22 +351,55 @@ body{
     }
 }
 
-$breakpoint-tablet: 768px;
-@media screen and (min-width: $breakpoint-tablet) {
+// breakpoint-tablet: 768px;
+@media screen and (min-width: 768px) {
+
+
+    .hero-heading{
+        font-size: 4.5rem!important;
+        margin-top: 120px;
+    }
+
+
 
     .img-gallery{
+            flex-direction: row!important;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            
+            img{
+                width: 226px!important;
+                margin: 15px!important;
+            }
+    }
+
+
+    .footerlinks-container{
         flex-direction: row!important;
-        align-items: center;
         justify-content: center;
-        margin-top: 10px;
-        
-        img{
-            width: 226px!important;
-            margin: 15px!important;
+
+        li{
+            margin: 10px 30px!important;
         }
     }
+    
+    
    
 
+}
+//breakpoint-tablet-wide: 1000px;
+@media screen and (min-width: 1000px) {
+
+    .programs-card{
+        flex-direction: row!important;
+        margin: 30px 0 130px;
+ 
+        .card{
+            margin: 0 20px!important;
+        }
+    }
+    
 }
 
 
