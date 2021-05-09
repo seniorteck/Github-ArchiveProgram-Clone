@@ -293,6 +293,13 @@ body {
 .archive-wrapper .archive-content {
   font-size: 0.1 0.3rem;
   line-height: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .archive-wrapper .archive-btn {
@@ -306,7 +313,7 @@ body {
   border-image-source: linear-gradient(94.23deg, #5374fa 12.41%, #fd9179 52.55%, #ff6969 89.95%);
   text-transform: uppercase;
   font-weight: 600;
-  width: calc(100% - 100px);
+  width: 200px;
   max-width: 300px;
   cursor: pointer;
 }
@@ -392,15 +399,15 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .hero-heading {
-    font-size: 4.5rem !important;
+  .hero .hero-heading {
+    font-size: 4.5rem;
     margin-top: 120px;
   }
-  .img-gallery {
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: row !important;
-            flex-direction: row !important;
+  .archive-wrapper .img-gallery {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -409,9 +416,9 @@ body {
             justify-content: center;
     margin-top: 10px;
   }
-  .img-gallery img {
-    width: 226px !important;
-    margin: 15px !important;
+  .archive-wrapper .img-gallery img {
+    width: 20%;
+    margin: 15px;
   }
   .footerlinks-container {
     -webkit-box-orient: horizontal !important;
@@ -427,16 +434,32 @@ body {
   }
 }
 
-@media screen and (min-width: 1000px) {
-  .programs-card {
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: row !important;
-            flex-direction: row !important;
+@media screen and (min-width: 970px) {
+  .programs-wrapper .programs-card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     margin: 30px 0 130px;
   }
-  .programs-card .card {
+  .programs-wrapper .programs-card .card {
     margin: 0 20px !important;
+  }
+  .archive-wrapper .archive-content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .archive-wrapper .archive-content p {
+    width: 800px;
+  }
+  img {
+    width: 60% !important;
+    margin: 15px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -258,8 +258,8 @@ body{
     .archive-content{
         font-size: .1.3rem;
         line-height: 1.6rem;
-
-       
+        display: flex;
+        flex-direction: column;
     }
 
     .archive-btn{
@@ -273,7 +273,7 @@ body{
         border-image-source: linear-gradient(94.23deg,#5374fa 12.41%,#fd9179 52.55%,#ff6969 89.95%);
         text-transform: uppercase;
         font-weight: 600;
-        width: calc(100% - 100px);
+        width: 200px;
         max-width: 300px;
         cursor: pointer;
 
@@ -354,25 +354,32 @@ body{
 // breakpoint-tablet: 768px;
 @media screen and (min-width: 768px) {
 
+    .hero{
 
-    .hero-heading{
-        font-size: 4.5rem!important;
-        margin-top: 120px;
+        .hero-heading{
+            font-size: 4.5rem;
+            margin-top: 120px;
+        }
+    
     }
+    
 
+    .archive-wrapper{
 
-
-    .img-gallery{
-            flex-direction: row!important;
+        .img-gallery{
+            flex-direction: row;
             align-items: center;
             justify-content: center;
             margin-top: 10px;
             
             img{
-                width: 226px!important;
-                margin: 15px!important;
+                width: 20%;
+                margin: 15px;
             }
+        }
+
     }
+    
 
 
     .footerlinks-container{
@@ -383,22 +390,48 @@ body{
             margin: 10px 30px!important;
         }
     }
-    
-    
-   
 
 }
-//breakpoint-tablet-wide: 1000px;
-@media screen and (min-width: 1000px) {
 
-    .programs-card{
-        flex-direction: row!important;
-        margin: 30px 0 130px;
- 
-        .card{
-            margin: 0 20px!important;
+
+//breakpoint-tablet-wide: 1000px;
+@media screen and (min-width: 970px){
+
+    .programs-wrapper{
+
+        .programs-card{
+            flex-direction: row;
+            margin: 30px 0 130px;
+     
+            .card{
+                margin: 0 20px!important;
+            }
         }
+
     }
+
+    
+    .archive-wrapper{
+
+        .archive-content{
+            flex-direction: row;
+            justify-content:space-between;
+
+            p{
+                width: 800px;
+            }
+            
+        }
+
+    }
+    
+
+    img{
+        width: 60%!important;
+        margin: 15px!important;
+    }
+
+
     
 }
 
