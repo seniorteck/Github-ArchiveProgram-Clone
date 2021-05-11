@@ -90,6 +90,10 @@ body {
   z-index: 3;
 }
 
+.menu-wrapper .nav-container {
+  display: none;
+}
+
 .menu-wrapper .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -440,11 +444,27 @@ body {
 }
 
 @media screen and (min-width: 970px) {
+  .menu-wrapper .nav-container {
+    display: block;
+  }
+  .menu-wrapper .nav-links {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .menu-wrapper .menu-btn {
+    display: none;
+  }
   .hero {
     padding: 80px 120px;
   }
   .hero .hero-heading {
     font-weight: 300;
+  }
+  .hero .hero-decription {
+    font-size: 1.3rem;
+    line-height: 2rem;
   }
   .programs-wrapper {
     padding: 80px 60px;

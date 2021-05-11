@@ -83,6 +83,10 @@ body{
 
     }
 
+    .nav-container{
+        display: none;
+    }
+
     .nav-links{
         display: flex;
         flex-direction: column;
@@ -405,11 +409,32 @@ body{
 //breakpoint-tablet-wide: 1000px;
 @media screen and (min-width: 970px){
 
+    .menu-wrapper{
+
+        .nav-container{
+            display: block;
+        }
+    
+        .nav-links{
+            flex-direction: row;
+        }
+
+        .menu-btn{
+            display: none;
+        }
+
+    }
+
     .hero{
         padding: 80px 120px;
 
         .hero-heading{
             font-weight: 300;
+        }
+
+        .hero-decription{
+            font-size: 1.3rem;
+            line-height: 2rem;
         }
     }
 
